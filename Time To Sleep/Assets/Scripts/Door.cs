@@ -7,6 +7,13 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.layer != LayerMask.NameToLayer("Player"))
+        {
+            Debug.Log("Not player!");
+            return;
+        }
+            
         GameObject.FindAnyObjectByType<LevelChanger>().FadeToLevel(nextLevel);
+
     }
 }
