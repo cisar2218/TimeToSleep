@@ -28,6 +28,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private bool IsGrounded() {
-        return Physics2D.OverlapCapsule(groundCheck.position, new Vector2(0.75f, 0.1f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+        return Physics2D.OverlapCapsule(groundCheck.position, new Vector2(0.5f, 0.1f), CapsuleDirection2D.Horizontal, 0, groundLayer);
     }
 }
