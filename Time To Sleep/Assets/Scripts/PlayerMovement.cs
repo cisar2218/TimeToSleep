@@ -9,11 +9,32 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpingPower = 5f;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheck;
+    
+    [SerializeField] Animator animator;
 
     public float horizontal;
 
     private void FixedUpdate()
     {
+        bool movingLeft = horizontal < -0.01f;
+        bool movingRight = horizontal > 0.01f;
+        bool isMoving = movingLeft || movingRight;
+        if (movingRight)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (movingLeft)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        
+        if (isMoving && IsGrounded()) {
+            animator.SetBool("walking", true);
+        } else
+        {
+            animator.SetBool("walking", false);
+        }
+
         rb.linearVelocityX = horizontal * speed;
     }   
 
@@ -24,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     public void Jump(InputAction.CallbackContext context) {
         if (context.performed && IsGrounded()) {
             rb.linearVelocityY = jumpingPower;
+            animator.SetTrigger("jump");
         }
     }
 
