@@ -292,10 +292,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 7
   m_Material: {fileID: 6200000, guid: 9c530418c0733ab46afea30e6cd88a28, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -320,8 +320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   rb: {fileID: 8330344494645148020}
-  speed: 5
-  jumpingPower: 7
+  speed: 6.5
+  jumpingPower: 20
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
