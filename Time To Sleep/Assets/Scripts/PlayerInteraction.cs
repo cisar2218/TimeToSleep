@@ -9,6 +9,8 @@ public class PlayerInteraction : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
+        if (!context.performed) return;
+
         Collider2D[] potentialInteractables = Physics2D.OverlapCircleAll(transform.position, interactionRange); // TODO: Maybe  add a layer
 
         List<GameObject> interactables = new List<GameObject>();
@@ -28,6 +30,8 @@ public class PlayerInteraction : MonoBehaviour
     }
     public void Pick(InputAction.CallbackContext context)
     {
+        if (!context.performed) return;
+        
         Collider2D[] potentialPickables = Physics2D.OverlapCircleAll(transform.position, pickUpRange); // TODO: Maybe  add a layer
 
         List<GameObject> pickables = new List<GameObject>();
