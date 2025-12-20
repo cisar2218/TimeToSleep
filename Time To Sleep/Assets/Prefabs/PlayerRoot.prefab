@@ -301,6 +301,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   groundCheck: {fileID: 4280946390846150513}
+  animator: {fileID: 604766306026625436}
   horizontal: 0
 --- !u!114 &1562595998367113481
 MonoBehaviour:
