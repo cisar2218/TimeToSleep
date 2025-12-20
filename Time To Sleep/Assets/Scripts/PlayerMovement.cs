@@ -14,6 +14,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (horizontal > 0.01f)
+            transform.localScale = new Vector3(1, 1, 1);
+        else if (horizontal < -0.01f)
+            transform.localScale = new Vector3(-1, 1, 1);
+
         rb.linearVelocityX = horizontal * speed;
     }   
 
