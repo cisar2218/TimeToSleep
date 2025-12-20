@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour, IInteractable
 {
+    [SerializeField] Animator animator;
     bool canKill = false;
     void IInteractable.Interact(GameObject interactor)
     {
@@ -22,10 +23,24 @@ public class NPC : MonoBehaviour, IInteractable
     {
         if (!canKill) return;
 
-        // TODO:
-        // play kill animation
-        // animate to dead body
-        // remove this and other fluff
-        Debug.Log("Killed!");
+        animator.SetTrigger("death");
+        DisableNpc();
+    }
+
+
+
+    private void DisableNpc()
+    {
+        canKill = false;
+
+        // Disable collider so it no longer triggers interactions
+        var collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
+
+        // Stop further script logic
+        enabled = false;
     }
 }

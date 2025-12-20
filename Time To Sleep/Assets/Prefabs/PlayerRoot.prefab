@@ -301,6 +301,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   groundCheck: {fileID: 4280946390846150513}
+  animator: {fileID: 604766306026625436}
   horizontal: 0
 --- !u!114 &1562595998367113481
 MonoBehaviour:
@@ -618,15 +619,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 9c54edc392839e445b27237a0a19efc4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 9c54edc392839e445b27237a0a19efc4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 9c54edc392839e445b27237a0a19efc4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 9c54edc392839e445b27237a0a19efc4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
