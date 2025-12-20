@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     public void Jump(InputAction.CallbackContext context) {
         if (context.performed && IsGrounded()) {
             rb.linearVelocityY = jumpingPower;
-            animator.SetTrigger("Jump");
+            animator.SetTrigger("jump");
         }
     }
 
