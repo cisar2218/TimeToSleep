@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestingTilemaps.unity
     guid: 77ddc8b62aef91c40bd26863bf71a11e
+  - enabled: 1
+    path: Assets/Scenes/CloudCity.unity
+    guid: 88e2ecf52951ab643b7ec71c5d0d87c2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
