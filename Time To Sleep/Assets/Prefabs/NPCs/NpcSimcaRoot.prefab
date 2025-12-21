@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a31b91145d111924f9fea000427f1665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  animator: {fileID: 0}
+  animator: {fileID: 1443085587928545305}
 --- !u!1001 &1684465570978614218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8538940799468662055, guid: 01e9a271d5bd6ea458cad28603e81300, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.23364227
+      value: 0.4226034
       objectReference: {fileID: 0}
     - target: {fileID: 8538940799468662055, guid: 01e9a271d5bd6ea458cad28603e81300, type: 3}
       propertyPath: m_LocalRotation.x
@@ -158,11 +158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8538940799468662055, guid: 01e9a271d5bd6ea458cad28603e81300, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.9723226
+      value: -0.90631473
       objectReference: {fileID: 0}
     - target: {fileID: 8538940799468662055, guid: 01e9a271d5bd6ea458cad28603e81300, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -207.023
+      value: -130.002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -171,6 +171,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 01e9a271d5bd6ea458cad28603e81300, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1443085587928545305}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 01e9a271d5bd6ea458cad28603e81300, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1369355674324803034}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 01e9a271d5bd6ea458cad28603e81300, type: 3}
 --- !u!4 &22441616515772948 stripped
 Transform:
@@ -204,3 +207,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1369355674324803034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191100245485873783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120ff472a6a02474989ec433bb720a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCAfterDeathCallbacks
