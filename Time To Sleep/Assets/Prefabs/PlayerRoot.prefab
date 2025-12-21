@@ -464,6 +464,11 @@ MonoBehaviour:
   bodyPrefab: {fileID: 7916292671181749636, guid: 04ddc60f91d11d447b7e1cf535ffa0f5, type: 3}
   whereToSpawn: {fileID: 8743423809968156934}
   force: {x: 10, y: 0}
+  blockingLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  animator: {fileID: 604766306026625436}
+  tilesToPlace: 0
 --- !u!1 &6173549640922494433
 GameObject:
   m_ObjectHideFlags: 0
