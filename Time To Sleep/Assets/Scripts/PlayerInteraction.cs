@@ -7,6 +7,9 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] float interactionRange = 2f;
     [SerializeField] float pickUpRange = 2f;
 
+    [SerializeField] Animator animator;
+
+
     public void Interact(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
@@ -26,12 +29,13 @@ public class PlayerInteraction : MonoBehaviour
         {
             GameObject closest = SelectClosestGameObject(interactables);
             closest.GetComponent<IInteractable>().Interact(closest);
+            animator.SetTrigger("kill");
         }
     }
     public void Pick(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
-        
+
         Collider2D[] potentialPickables = Physics2D.OverlapCircleAll(transform.position, pickUpRange); // TODO: Maybe  add a layer
 
         List<GameObject> pickables = new List<GameObject>();
