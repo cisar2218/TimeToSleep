@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 4941235317821450730}
   - component: {fileID: 5422739193732828722}
   - component: {fileID: 3517339985379602013}
+  - component: {fileID: 5459916842535247959}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -407,6 +408,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0e440c8d-8b32-4f95-a924-4518bd759737
     m_ActionName: 'Gameplay/PickUp[/Keyboard/f]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5459916842535247959}
+        m_TargetAssemblyTypeName: RestartScene, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2b247cae-e260-41b0-b04d-210766ff8151
+    m_ActionName: 'Gameplay/Restart[/Keyboard/r]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Gameplay
@@ -469,6 +486,18 @@ MonoBehaviour:
     m_Bits: 0
   animator: {fileID: 604766306026625436}
   tilesToPlace: 0
+--- !u!114 &5459916842535247959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695503422013852114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e276e195ed4baf468e631f18879d1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestartScene
 --- !u!1 &6173549640922494433
 GameObject:
   m_ObjectHideFlags: 0
