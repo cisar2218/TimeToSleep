@@ -84,7 +84,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   animator: {fileID: 4090096180857619493}
-  loot: {fileID: 7916292671181749636, guid: 04ddc60f91d11d447b7e1cf535ffa0f5, type: 3}
 --- !u!1001 &6306930651435293667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -240,6 +239,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 6273e507079de9d4ea156df0b3439072, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4090096180857619493}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 6273e507079de9d4ea156df0b3439072, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5453033345328756533}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 6273e507079de9d4ea156df0b3439072, type: 3}
 --- !u!4 &4659376270462100029 stripped
 Transform:
@@ -273,3 +275,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5453033345328756533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5792042385895357022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120ff472a6a02474989ec433bb720a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCAfterDeathCallbacks
