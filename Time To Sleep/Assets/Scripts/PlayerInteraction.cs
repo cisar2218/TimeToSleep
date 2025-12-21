@@ -28,7 +28,7 @@ public class PlayerInteraction : MonoBehaviour
         if (interactables.Count > 0)
         {
             GameObject closest = SelectClosestGameObject(interactables);
-            closest.GetComponent<IInteractable>().Interact(closest);
+            closest.GetComponent<IInteractable>().Interact(this.gameObject);
             animator.SetTrigger("kill");
         }
     }
