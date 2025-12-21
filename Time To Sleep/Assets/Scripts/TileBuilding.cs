@@ -7,6 +7,7 @@ public class TileBuilding : MonoBehaviour
     [SerializeField] Transform whereToSpawn;
     [SerializeField] Vector2 force;
     [SerializeField] LayerMask blockingLayers;
+    [SerializeField] Animator animator;
 
     public int tilesToPlace = 0;
 
@@ -41,6 +42,7 @@ public class TileBuilding : MonoBehaviour
             whereToSpawn.rotation
         );
 
+        animator.SetTrigger("kill");
         tilesToPlace--;
 
         Rigidbody2D rb = bodyInstance.GetComponent<Rigidbody2D>();

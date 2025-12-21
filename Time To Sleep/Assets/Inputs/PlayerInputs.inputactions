@@ -110,6 +110,17 @@
                 },
                 {
                     "name": "",
+                    "id": "69af6a0d-3b4d-4ecf-81a2-a51fa2af0e1e",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Restart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "039f1f34-8fd9-45fa-b724-bf39b2fc235e",
                     "path": "<Keyboard>/space",
                     "interactions": "",
